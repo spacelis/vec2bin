@@ -1,0 +1,7 @@
+[package]
+name = "vec2bin"
+version = "0.1.0"
+authors = ["Wen Li <spacelis@gmail.com>"]
+
+[dependencies]
+hdf5 = "0.4.1"
