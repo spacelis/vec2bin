@@ -47,9 +47,9 @@ fn parse_vec(src_filename: &String) -> (Vec<String>, Vec<Vec<f32>>, usize, usize
             is_first_line = false;
         } else {
             let line = line.unwrap();
-            let mut parts: Vec<String> = line.rsplitn(302, " ").map(String::from).collect();
+            let mut parts: Vec<String> = line.rsplitn(301, " ").map(String::from).collect();
             parts.reverse();
-            assert_eq!(parts.len(), 302);
+            assert_eq!(parts.len(), 301);
             voc.push(parts[0].clone());
             let vec_part: Vec<f32> = parts[1..301].iter().map(|x| x.parse().unwrap()).collect();
             assert_eq!(vec_part.len(), 300);
