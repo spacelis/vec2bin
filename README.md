@@ -12,6 +12,7 @@ w_2<tab>f_21<tab>f_22...f_2n
 w_m<tab>f_m1<tab>f_m2...f_mn
 ```
 to a text file contain the list of words and a HDF5 file contain the matrix in binary format.
+This is compatible with fastText format.
 
 The release build can process 2.5 million words in 100 seconds.
 
