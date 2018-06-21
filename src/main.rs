@@ -43,7 +43,7 @@ fn parse_vec(src_filename: &String) -> (Vec<String>, Vec<Vec<f32>>, usize, usize
             let parts: Vec<usize> = line.split(" ").map(|x| x.parse().unwrap()).collect();
             m = parts[0];
             n = parts[1];
-            println!("{} {}", m, n);
+            println!("{} words, {} dimensions", m, n);
             is_first_line = false;
         } else {
             let line = line.unwrap();
